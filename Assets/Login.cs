@@ -37,7 +37,7 @@ public class Login : MonoBehaviour
 			SampleObject incomingSample = await RetrieveSpecificData<SampleObject>("object_key");
 			Debug.Log($"Loaded sample object: {incomingSample.AmazingFloat}, {incomingSample.SparklingInt}, {incomingSample.SophisticatedString}");
 
-			await ForceDeleteSpecificData("object_key");
+			//await ForceDeleteSpecificData("object_key");
 			await ListAllKeys();
 			await RetrieveEverything();
 
